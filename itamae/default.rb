@@ -1,8 +1,8 @@
-execute "apt-get-update" do
+execute "apt-get update" do
   command "apt-get update -q -y"
 end
 
-execute "apt-get-upgrade" do
+execute "apt-get upgrade" do
   command "apt-get upgrade -y"
 end
 
