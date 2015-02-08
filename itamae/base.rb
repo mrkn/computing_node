@@ -7,6 +7,6 @@ execute "apt-get upgrade" do
 end
 
 package "lv"
-package "git"
+package "git-core"
 package "zsh"
 package "tmux"
