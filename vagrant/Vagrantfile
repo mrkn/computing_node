@@ -1,7 +1,16 @@
 # -*- mode: ruby -*-
 # vim: ft=ruby
+Vagrant.require_plugin('vagrant-itamae')
+
 VAGRANT_API_VERSION = '2'
 
 Vagrant.configure(VAGRANT_API_VERSION) do |config|
   config.vm.box = 'ubuntu/trusty64'
+
+  config.vm.define "comp" do |node|
+    node.vm.provision :itamae do |itamae|
+      itamae.sudo = true
+      itamae.recipes = %w[itamae/default.rb]
+    end
+  end
 end
