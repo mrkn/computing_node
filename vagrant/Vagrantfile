@@ -1,7 +1,5 @@
 # -*- mode: ruby -*-
 # vim: ft=ruby
-Vagrant.require_plugin('vagrant-itamae')
-
 VAGRANT_API_VERSION = '2'
 
 Vagrant.configure(VAGRANT_API_VERSION) do |config|
