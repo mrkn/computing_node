@@ -16,6 +16,7 @@ How to use
 ----------
 
 ```
+$ vagrant plugin install vagrant-itamae
 $ vagrant up
 ```
 
