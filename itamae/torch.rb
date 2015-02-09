@@ -6,7 +6,7 @@ include_recipe 'torch_deps.rb'
 
 execute 'install torch' do
   command 'sh /vagrant/itamae/install_torch.sh'
-  only_if 'test -d /usr/local/torch'
+  not_if 'test -x /usr/local/torch/install/bin/itorch'
 end
 
 remote_file '/etc/profile.d/torch.sh' do
