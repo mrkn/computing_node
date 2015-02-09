@@ -7,3 +7,8 @@ include_recipe "./build_essential.rb"
 package "cuda-toolkit-6-5" do
   version '6.5-14'
 end
+
+remote_file '/etc/profile.d/cuda.sh' do
+  source 'files/etc/profile.d/cuda.sh'
+  mode '644'
+end
