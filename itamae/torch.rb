@@ -1,5 +1,7 @@
 # See http://torch.ch/docs/getting-started.html
 
+package 'ipython'
+
 include_recipe 'torch_deps.rb'
 
 execute 'install torch' do
