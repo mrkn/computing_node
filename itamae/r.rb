@@ -1,0 +1,7 @@
+package 'r-base'
+package 'r-recommended'
+package 'r-base-dev'
+package 'r-doc-pdf'
+package 'r-doc-info'
+package 'r-mathlib'
+package 'r-base-html'
