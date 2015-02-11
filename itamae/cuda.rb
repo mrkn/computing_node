@@ -4,7 +4,7 @@
 include_recipe "./cuda_repo.rb"
 include_recipe "./build_essential.rb"
 
-package "cuda-toolkit-6-5" do
+package "cuda" do
   version '6.5-14'
 end
 
