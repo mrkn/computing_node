@@ -1,0 +1,3 @@
+---
+caffe:
+  cpu_only: false

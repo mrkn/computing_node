@@ -9,6 +9,11 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
     node.vm.provision :itamae do |itamae|
       itamae.sudo = true
       itamae.recipes = %w[itamae/default.rb]
+      if ENV['CPU_ONLY']
+        itamae.yaml = "itamae/cpu_node.yaml"
+      else
+        itamae.yaml = "itamae/gpu_node.yaml"
+      end
     end
   end
 
