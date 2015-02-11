@@ -11,4 +11,9 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
       itamae.recipes = %w[itamae/default.rb]
     end
   end
+
+  config.vm.provider :virtualbox do |vbox|
+    vbox.cpus = 4
+    vbox.memory = 2048
+  end
 end
