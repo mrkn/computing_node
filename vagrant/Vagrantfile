@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
   end
 
   config.vm.provider :virtualbox do |vbox|
-    vbox.cpus = 4
-    vbox.memory = 2048
+    vbox.cpus = ENV['CPU'] || 4
+    vbox.memory = ENV['MEM'] || 2048
   end
 end
