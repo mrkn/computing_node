@@ -7,5 +7,5 @@ end
 
 execute 'install caffe' do
   command "env CPU_ONLY=#{node['caffe']['cpu_only'] ? 1 : 0} sh /vagrant/itamae/install_caffe.sh"
-  not_if 'test -x /usr/local/caffe/bin/caffe.bin'
+  not_if 'test -x /usr/local/caffe/distribute/bin/caffe.bin'
 end
