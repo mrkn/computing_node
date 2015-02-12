@@ -4,6 +4,7 @@
 caffe_srcdir=$(dirname $caffe_prefix)
 caffe_url='https://github.com/BVLC/caffe.git'
 
+rm -rf $caffe_srcdir
 git clone $caffe_url $caffe_srcdir
 cd $caffe_srcdir
 
